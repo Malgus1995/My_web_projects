@@ -9,7 +9,7 @@ import { TdService } from '../../services/td.service';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
- todos: Todo[];
+  todos: Todo[];
   constructor(private todoService: TdService ) {
 
   }

@@ -1,7 +1,6 @@
-import { Component, OnInit,Output } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import {TdService} from '../services/td.service';
 import { Todo } from './Todo';
-
 
 @Component({
   selector: 'app-contents',
@@ -12,6 +11,7 @@ export class ContentsComponent implements OnInit {
   todos: Todo[];
   constructor(private todoService: TdService) { }
   ngOnInit() {
+    this.todoService.getTodos().subscribe(todos => this.todos = todos);
   }
 
   addTodo(todo: Todo) {

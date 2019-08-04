@@ -15,7 +15,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class TdService {
-  todosUrl = 'https://jsonplaceholder.typicode.com/todos';
+  todosUrl: string = 'https://jsonplaceholder.typicode.com/todos';
   todosLimit = '?_limit=3';
   constructor(private http: HttpClient) { }
 
@@ -33,6 +33,7 @@ export class TdService {
     return this.http.delete<Todo>(url, httpOptions);
   }
   addTodo(todo: Todo): Observable<Todo> {
+    console.log(todo);
     return this.http.post<Todo>(this.todosUrl, todo, httpOptions);
   }
 
