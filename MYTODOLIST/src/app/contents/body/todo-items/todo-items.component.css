@@ -1,0 +1,25 @@
+#todo_list{
+  background-color: cornflowerblue;
+}
+
+.is-completed{
+  text-decoration: line-through;
+  text-decoration-color: yellow;
+}
+
+.del{
+  background: crimson;
+  border-radius: 50%;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  float : right;
+  color: #fff;
+}
+.todo{
+  background-color: lightskyblue;
+  border-bottom: 1px slategray solid;
+  padding: 10px;
+
+}
+
