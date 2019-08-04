@@ -16,7 +16,10 @@
 <div class="col-md-7 col-xs-6" id="domain_menu_1">
 <form class="form" (ngSubmit)="onSubmit()">
   <div class="add_ele col-md-8">
-  <input type="text" class="form-control" name="todolist" placeholder="add your work">
+  <input type="text" class="form-control"
+         name="title"
+         [(ngModel)]="title"
+         placeholder="add your work">
   </div>
 
   <div class="col-md-3 add_ele">
