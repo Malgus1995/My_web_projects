@@ -1,3 +1,4 @@
-
-<app-todo-items *ngFor="let td of todos" [tditem]="td"></app-todo-items>
+<app-todo-items *ngFor="let td of todos" [tditem]="td"
+(deleteTodo)="deleteTodo($event)"
+></app-todo-items>
 
