@@ -1,0 +1,10 @@
+
+<h1>Ch02-welcome-msg</h1>
+<h4>
+  <span>{{userName}}</span>님  ㅎㅇ염
+</h4>
+<div class="contents">
+  <label for="user-name">이름:</label>
+  <input type="text" name="user-name" id="user-name" #nameInput (keyup)="onKeyUp(nameInput.value)">
+  <button (click)="setName(nameInput.value)" type="button">입력</button>
+</div>
