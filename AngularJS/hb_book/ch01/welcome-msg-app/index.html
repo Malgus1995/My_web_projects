@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome MSg APP</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="./jquery.js"></script>
+</head>
+<body>
+	<h4><span id="your-name"></span>님 ㅎㅇ염</h4>
+	<div class ="contents">
+		<label>이름:</label>
+		<input type="text" id="user-name">
+		<button type="button">입력</button>
+	</div>
+	
+	</script>
+	<script>
+	 console.log($);
+    $(document).ready(function() {
+      $("button").on('click', function() {
+        var userName = $("#user-name").val();
+        console.log(userName)
+        $("#your-name").text(userName);
+      });
+    });
+  </script>
+
+</body>
+</html>
