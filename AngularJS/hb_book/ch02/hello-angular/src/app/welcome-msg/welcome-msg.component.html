@@ -1,9 +1,10 @@
-<h4>
-  {{ welcomeMsg }}
-</h4>
-
+<mat-card>
 <div class="contents">
-  <label for="user-name">이름:</label>
-  <input id="user-name" name="user-name"  [(ngModel)]="userName" (ngModelChange)="onChange()">
-  <button type="button" (click)="showWelcomeMsg()">입력</button>
+  <mat-form-field>
+  <input matInput name="value"  [(ngModel)]="userName" (ngModelChange)="onChange()">
+  </mat-form-field>
+  <button mat-raised-button (click)="showWelcomeMsg()">입력</button>
+  <span class="welcome-msg">{{welcomeMsg}}</span>
 </div>
+</mat-card>
+
