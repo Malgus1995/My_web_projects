@@ -1,0 +1,10 @@
+<div id="content">
+  <div class="counter">
+    <label for="number_input" >{{input_ordertext}}:</label>
+    <input id="number_input" type="text" name="number_input" [(ngModel)]="InputNumber"/>
+  </div>
+  <div class = "number_viewer">
+    <span *ngIf="!checkInt(InputNumber) && InputNumber!==''">{{warningMsg}}</span>
+  </div>
+
+</div>
