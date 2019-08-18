@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f4754c4-c23f-4740-ab31-6ea79c4e7e2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ch02/hello-angular/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ch02/hello-angular/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch02/hello-angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ch02/hello-angular/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch02/hello-angular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ch02/hello-angular/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch02/hello-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ch02/hello-angular/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch02/hello-angular/src/app/lang-metadata.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ch02/hello-angular/src/app/lang-metadata.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-msg/welcome-msg.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-msg/welcome-msg.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-msg/welcome-msg.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-msg/welcome-msg.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-msg/welcome-msg.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-msg/welcome-msg.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-support.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-support.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch02/hello-angular/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ch02/hello-angular/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04/simple-counter/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ch04/simple-counter/src/app/app.module.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +18,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ch04/simple-counter/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -75,6 +90,8 @@
         <option value="$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/counter-component/counter-component.component.html" />
         <option value="$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/counter-component/counter-component.component.ts" />
         <option value="$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/ch04/simple-counter/src/app/app.module.ts" />
       </list>
     </option>
   </component>
@@ -101,23 +118,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="hb_book" type="b2602c69:ProjectViewProjectNode" />
               <item name="hb_book" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hb_book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hb_book" type="462c0819:PsiDirectoryNode" />
-              <item name="ch02" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hb_book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hb_book" type="462c0819:PsiDirectoryNode" />
-              <item name="ch02" type="462c0819:PsiDirectoryNode" />
-              <item name="hello-angular" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hb_book" type="b2602c69:ProjectViewProjectNode" />
@@ -149,19 +156,22 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/ch02/hello-angular/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/ch04/simple-counter/node_modules/typescript/lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -187,14 +197,16 @@
       <updated>1565693448629</updated>
       <workItem from="1565693449806" duration="19431000" />
       <workItem from="1565763785650" duration="12055000" />
+      <workItem from="1566139765284" duration="2894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31486000" />
+    <option name="totallyTimeSpent" value="34380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="23" width="1400" height="906" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -209,8 +221,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49963742" visible="true" weight="0.32923833" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5003626" side_tool="true" visible="true" weight="0.32923833" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49891225" visible="true" weight="0.32923833" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010877" side_tool="true" visible="true" weight="0.32923833" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -225,16 +237,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ch02/ng-welcome-msg-app/src/index.html" />
-    <entry file="file://$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-support.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ch02/hello-angular/src/app/lang-selector/lang-selector.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -285,65 +287,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/SimpleComponent.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/angular.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/SimpleComponent.ts" />
+    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/main.ts" />
+    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/angular.json" />
+    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/index.html" />
+    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/app-routing.module.ts" />
+    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/app.component.ts" />
+    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/app.component.html" />
+    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/app.module.ts" />
     <entry file="file://$PROJECT_DIR$/ch02/hello-angular/src/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -374,16 +325,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/simpleone-component/simpleone-component.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/simpleone-component/simpleone-component.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="36" selection-start-line="4" selection-start-column="13" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/simpleone-component/simpleone-component.component.html" />
+    <entry file="file://$PROJECT_DIR$/ch04/SimpleComponent/src/app/simpleone-component/simpleone-component.component.ts" />
     <entry file="file://$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/main.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -577,10 +520,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch04/simple-counter/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
