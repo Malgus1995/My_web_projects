@@ -1,0 +1,14 @@
+<div class="chkbox">
+  <div class="headline">
+    <h4>항목체크</h4>
+  </div>
+  <div class="bodyline">
+    <div *ngFor ="let num of numbers">
+      <label for= "checkbox {{num}}">check list {{num}}</label>
+      <input type="checkbox" (click)="addList(num)" name="check list {{num}}" id="checkbox {{num}}" value="check list {{num}}">
+    </div>
+    <button type="button" id="output">결과 출력</button>
+    <app-show-chkboxnum [checkedlist]="checkedList" [checknumstr]="checknumstr"></app-show-chkboxnum>
+  </div>
+
+</div>
