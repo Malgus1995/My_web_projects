@@ -1,0 +1,13 @@
+:host{
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid darkslategray;
+}
+
+.track-zone{
+  width:200px;
+  height: 200px;
+  vertical-align: top;
+  background-color: lightblue;
+  display:inline-block;
+}

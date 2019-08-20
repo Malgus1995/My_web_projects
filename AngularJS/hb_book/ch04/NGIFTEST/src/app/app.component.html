@@ -1,0 +1,11 @@
+<div>
+<button type="button" (click)="isShow = !isShow">보이기</button>
+<label *ngIf="isShow; else hiding">You are special!</label>
+  <ng-template #hiding>
+    <label>I'm so depressed</label>
+  </ng-template>
+</div>
+
+<div [ngClass]="myObj">
+  <p>hihihi</p>
+</div>
