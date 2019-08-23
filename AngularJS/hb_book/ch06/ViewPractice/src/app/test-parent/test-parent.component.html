@@ -1,0 +1,9 @@
+<ol>
+  <li *ngFor="let num of checkListNums">
+    <app-view-children></app-view-children>
+  </li>
+</ol>
+<div>
+  <button type="button" (click)="checkedAll()">Check All</button>
+  <button type="button" (click)="uncheckedAll()">UnCheck All</button>
+</div>
