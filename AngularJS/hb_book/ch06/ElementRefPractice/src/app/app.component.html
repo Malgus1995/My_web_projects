@@ -1,0 +1,11 @@
+<div>
+  <input type="text" id="n-1" #keyIput (keyup)="leaveKeyLog($event, keyIput.value)"/>
+  <div>INPUT[id="{{keyIput.id}}"] your current input:{{keyIput.value}}</div>
+  <div>INPUT[id="{{keyIput.id}}"] all input:{{logs | json }}</div>
+</div>
+<div>
+  more attributes  of INPUT[id="{{keyIput.id}}"]<br/>
+  type: {{keyIput.type}} <br/>
+  isRequired: {{keyIput.required}} <br/>
+  isDisabled: {{keyIput.disabled}} <br/>
+</div>
