@@ -21,3 +21,6 @@
 .sidebar .nav-item + .nav-item {
   margin-left: 0;
 }
+.sidebar .link {
+  border-radius: 0;
+}
