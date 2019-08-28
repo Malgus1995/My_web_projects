@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { ScmMainModule } from './scm-main/scm-main.module';
 import {ProductModule} from './product/product.module';
 import {CategoryModule} from './category/category.module';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -13,6 +15,7 @@ import {CategoryModule} from './category/category.module';
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
 
     /* custom modules */
     ScmMainModule,

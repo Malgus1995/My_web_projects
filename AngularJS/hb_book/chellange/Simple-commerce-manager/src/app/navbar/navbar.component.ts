@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   appTitle ="상품관리 시스템"
   constructor() { }
-  serachProduct(no:number) {
+  serachProduct(no: number) {
     console.log(`search: ${no}`);
   }
   ngOnInit() {
