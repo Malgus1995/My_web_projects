@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
-import *  as Rx from 'rxjs';
 @Component({
-  selector: 'app-root',
+  selector: 'scm-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'comp-comm';
+  title = 'Simple-commerce-manager';
 }

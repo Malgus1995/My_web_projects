@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6f4754c4-c23f-4740-ab31-6ea79c4e7e2e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch06/comp-comm/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ch06/comp-comm/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch08/ngFormTest/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ch08/ngFormTest/src/app/app.module.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,91 +18,85 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch06/ElementRefPractice/src/app/app.component.html">
+        <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch06/ngContentPr/src/app/app.component.html">
+        <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/sidebar/sidebar.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch06/ngContentPr/src/app/test-parent/child/child.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch06/ngContentPr/src/app/test-parent/test-parent.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch06/ngContentPr/src/app/test-parent/child/child.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch06/ngContentPr/src/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="6" column="73" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ch06/ngContentPr/src/app/test-parent/test-parent.component.ts">
+        <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/sidebar/sidebar.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#0#108#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch06/ElementRefPractice/src/app/app.module.ts">
+        <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/navbar/navbar.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="74" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch06/ElementRefPractice/src/app/app.component.ts">
+        <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/navbar/navbar.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/navbar/navbar.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/browserslist">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/angular.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="101" column="17" lean-forward="true" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -112,49 +108,20 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>json</find>
+      <find>form</find>
+      <find>s</find>
+      <find>style</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/app/app.component.spec.ts" />
-        <option value="$PROJECT_DIR$/ch02/ng-welcome-msg-app/src/app/welcome-msg/welcome-msg.component.html" />
-        <option value="$PROJECT_DIR$/ch02/ng-welcome-msg-app/src/index.html" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/app/lang-metadata.ts" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/app/lang-selector/lang-selector-btn.pipe.ts" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/app/lang-selector/lang-selector.component.html" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/polyfills.ts" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/styles.css" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-msg/welcome-msg.component.ts" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-msg/welcome-msg.component.html" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-msg/welcome-msg.component.css" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/app/lang-selector/lang-selector.component.css" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/app/lang-selector/lang-selector.component.ts" />
-        <option value="$PROJECT_DIR$/ch04/SimpleComponent/src/app/SimpleComponent.ts" />
-        <option value="$PROJECT_DIR$/ch04/SimpleComponent/src/index.html" />
-        <option value="$PROJECT_DIR$/ch04/SimpleComponent/src/app/simpleone-component/simpleone-component.component.html" />
-        <option value="$PROJECT_DIR$/ch04/SimpleComponent/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/ch04/SimpleComponent/src/app/simpleone-component/simpleone-component.component.ts" />
-        <option value="$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/index.html" />
-        <option value="$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/counter-component/counter-component.component.css" />
-        <option value="$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/plus-minus-component/plus-minus-component.component.css" />
-        <option value="$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/plus-minus-component/btn-preprocess.pipe.ts" />
-        <option value="$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-support.service.ts" />
-        <option value="$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/counter-service.service.ts" />
-        <option value="$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/plus-minus-component/plus-minus-component.component.html" />
-        <option value="$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/plus-minus-component/plus-minus-component.component.ts" />
-        <option value="$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/counter-component/counter-component.component.html" />
-        <option value="$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/counter-component/counter-component.component.ts" />
-        <option value="$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/ch04/simple-counter/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/ch05/InjectionPractice/src/app/get-nowtime/dateForm.ts" />
-        <option value="$PROJECT_DIR$/ch05/InjectionPractice/src/app/dateForm.ts" />
         <option value="$PROJECT_DIR$/ch05/InjectionPractice/src/app/app.tokens.ts" />
         <option value="$PROJECT_DIR$/ch05/InjectionPractice/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/ch05/InjectionPractice/src/app/get-nowtime/get-nowtime.component.html" />
@@ -169,12 +136,49 @@
         <option value="$PROJECT_DIR$/ch06/ngContentPr/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/ch06/ngContentPr/src/app/test-parent/test-parent.component.html" />
         <option value="$PROJECT_DIR$/ch06/ngContentPr/src/app/test-parent/test-parent.component.ts" />
+        <option value="$PROJECT_DIR$/ch06/startEnd/src/app/sample/sample.component.ts" />
+        <option value="$PROJECT_DIR$/ch06/startEnd/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/ch07/contacts-manager/src/app/user/user.model.ts" />
+        <option value="$PROJECT_DIR$/ch07/contacts-manager/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/ch07/contacts-manager/src/app/in-memory-db-service.service.ts" />
+        <option value="$PROJECT_DIR$/ch07/contacts-manager/src/app/in-memory-user.service.ts" />
+        <option value="$PROJECT_DIR$/ch07/contacts-manager/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/ch07/contacts-manager/src/app/user/user.service.ts" />
+        <option value="$PROJECT_DIR$/ch07/contacts-manager/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/ch06/startEnd/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/ch06/comp-comm/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/ch07/rxjsPr/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/ch07/rxjsPr/src/app/myapi-gate-way.service.ts" />
+        <option value="$PROJECT_DIR$/ch07/rxjsPr/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/ch08/ngFormTest/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/ch08/ngFormTest/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/ch08/modelDualDirectBindingPr/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/ch08/modelDualDirectBindingPr/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/ch08/modelDualDirectBindingPr/src/app/test-child/test-child.component.html" />
+        <option value="$PROJECT_DIR$/ch08/modelDualDirectBindingPr/src/app/test-child/test-child.component.ts" />
+        <option value="$PROJECT_DIR$/ch08/modelDualDirectBindingPr/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/ch08/product-manager/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/ch08/product-manager/src/app/custom-validators.directive.ts" />
+        <option value="$PROJECT_DIR$/ch08/product-manager/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/ch08/product-manager/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/ch08/reactvieformPr/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/ch08/reactvieformPr/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/ch08/reactvieformPr/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/ch08/ngFormTest/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/chellange/Simple-commerce-manager/src/styles.css" />
+        <option value="$PROJECT_DIR$/chellange/Simple-commerce-manager/angular.json" />
+        <option value="$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/navbar/navbar.component.css" />
+        <option value="$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/navbar/navbar.component.ts" />
+        <option value="$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/sidebar/sidebar.component.html" />
+        <option value="$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/sidebar/sidebar.component.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="335" />
-    <option name="y" value="144" />
+    <option name="x" value="296" />
+    <option name="y" value="177" />
     <option name="width" value="1400" />
     <option name="height" value="906" />
   </component>
@@ -194,37 +198,46 @@
             <path>
               <item name="hb_book" type="b2602c69:ProjectViewProjectNode" />
               <item name="hb_book" type="462c0819:PsiDirectoryNode" />
-              <item name="ch06" type="462c0819:PsiDirectoryNode" />
+              <item name="chellange" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hb_book" type="b2602c69:ProjectViewProjectNode" />
               <item name="hb_book" type="462c0819:PsiDirectoryNode" />
-              <item name="ch06" type="462c0819:PsiDirectoryNode" />
-              <item name="ngContentPr" type="462c0819:PsiDirectoryNode" />
+              <item name="chellange" type="462c0819:PsiDirectoryNode" />
+              <item name="Simple-commerce-manager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hb_book" type="b2602c69:ProjectViewProjectNode" />
               <item name="hb_book" type="462c0819:PsiDirectoryNode" />
-              <item name="ch06" type="462c0819:PsiDirectoryNode" />
-              <item name="ngContentPr" type="462c0819:PsiDirectoryNode" />
+              <item name="chellange" type="462c0819:PsiDirectoryNode" />
+              <item name="Simple-commerce-manager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hb_book" type="b2602c69:ProjectViewProjectNode" />
               <item name="hb_book" type="462c0819:PsiDirectoryNode" />
-              <item name="ch06" type="462c0819:PsiDirectoryNode" />
-              <item name="ngContentPr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hb_book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hb_book" type="462c0819:PsiDirectoryNode" />
-              <item name="ch06" type="462c0819:PsiDirectoryNode" />
-              <item name="ngContentPr" type="462c0819:PsiDirectoryNode" />
+              <item name="chellange" type="462c0819:PsiDirectoryNode" />
+              <item name="Simple-commerce-manager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="test-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hb_book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hb_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chellange" type="462c0819:PsiDirectoryNode" />
+              <item name="Simple-commerce-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="navbar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hb_book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hb_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chellange" type="462c0819:PsiDirectoryNode" />
+              <item name="Simple-commerce-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="sidebar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -247,7 +260,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/ch05/InjectionPractice/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/ch06/ElementRefPractice/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -280,19 +293,26 @@
       <workItem from="1565763785650" duration="12055000" />
       <workItem from="1566139765284" duration="2894000" />
       <workItem from="1566561866676" duration="13590000" />
-      <workItem from="1566643059474" duration="5171000" />
+      <workItem from="1566643059474" duration="15203000" />
+      <workItem from="1566665307907" duration="1685000" />
+      <workItem from="1566730002826" duration="5451000" />
+      <workItem from="1566737860224" duration="8000" />
+      <workItem from="1566801039711" duration="14754000" />
+      <workItem from="1566898986929" duration="2477000" />
+      <workItem from="1566985265925" duration="1538000" />
+      <workItem from="1566988376728" duration="2517000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53141000" />
+    <option name="totallyTimeSpent" value="91603000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="335" y="144" width="1400" height="906" extended-state="0" />
+    <frame x="296" y="177" width="1400" height="906" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.492674" visible="true" weight="0.24945612" />
+      <window_info id="Structure" order="1" sideWeight="0.507326" side_tool="true" visible="true" weight="0.24945612" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -320,151 +340,190 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ch02/hello-angular/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/ch06/startEnd/src/app/sample/sample.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/contacts-manager/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/contacts-manager/src/app/in-memory-db-service.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/contacts-manager/src/app/in-memory-user.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/contacts-manager/src/app/user/user.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/contacts-manager/src/app/in-memory-user.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/contacts-manager/src/app/user/user.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/contacts-manager/src/app/user/user.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/contacts-manager/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/contacts-manager/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/contacts-manager/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/rxjsPr/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch06/startEnd/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch06/comp-comm/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch06/comp-comm/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/rxjsPr/src/app/myapi-gate-way.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/rxjsPr/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch06/startEnd/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch02/hello-angular/src/app/lang-selector/lang-selector-btn.pipe.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/counter-component/counter-component.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch02/hello-angular/src/app/lang-selector/lang-selector.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch02/hello-angular/src/app/lang-selector/lang-selector.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-msg/welcome-msg.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch02/hello-angular/src/app/welcome-msg/welcome-msg.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/plus-minus-component/plus-minus-component.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/plus-minus-component/btn-preprocess.pipe.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/plus-minus-component/plus-minus-component.component.html">
+    <entry file="file://$PROJECT_DIR$/ch06/comp-comm/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/plus-minus-component/plus-minus-component.component.ts">
+    <entry file="file://$PROJECT_DIR$/ch08/ngFormTest/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/counter-service.service.ts">
+    <entry file="file://$PROJECT_DIR$/ch08/ngFormTest/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/counter-component/counter-component.component.html">
+    <entry file="file://$PROJECT_DIR$/ch08/modelDualDirectBindingPr/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/myfirstchallengeCounter/src/app/counter-component/counter-component.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/simple-counter/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/simple-counter/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="195">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/mouse-pos-logger/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/ch08/modelDualDirectBindingPr/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/mouse-pos-logger/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/mouse-pos-logger/src/app/mouse-track-zone/mouse-track-zone.component.ts">
+    <entry file="file://$PROJECT_DIR$/ch08/modelDualDirectBindingPr/src/app/app.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -473,240 +532,207 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/mouse-pos-logger/src/app/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/ch08/modelDualDirectBindingPr/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch08/modelDualDirectBindingPr/src/app/test-child/test-child.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch08/modelDualDirectBindingPr/src/app/test-child/test-child.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch08/modelDualDirectBindingPr/src/app/test-child/test-child.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch08/modelDualDirectBindingPr/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch08/reactvieformPr/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/mouse-pos-logger/src/app/my-special-logger.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/InjectionPractice/src/app/dateForm.ts" />
-    <entry file="file://$PROJECT_DIR$/ch05/mouse-pos-logger/src/app/log-level.enum.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/mouse-pos-logger/src/app/my-special-logger.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/InjectionPractice/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/ch08/product-manager/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" column="48" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/InjectionPractice/src/app/special-service.service.spec.ts">
+    <entry file="file://$PROJECT_DIR$/ch08/ngFormTest/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/InjectionPractice/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/InjectionPractice/src/app/app.tokens.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/InjectionPractice/src/app/date-form.enum.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/InjectionPractice/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/InjectionPractice/src/app/special-service.service.ts">
+    <entry file="file://$PROJECT_DIR$/ch08/product-manager/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ViewPractice/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ViewPractice/src/app/test-parent/test-parent.component.html">
+    <entry file="file://$PROJECT_DIR$/ch08/product-manager/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ViewPractice/src/app/test-parent/view-children/view-children.component.ts">
+    <entry file="file://$PROJECT_DIR$/ch08/ngFormTest/src/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch08/ngFormTest/src/environments/environment.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ViewPractice/src/app/test-parent/view-children/view-children.component.html">
+    <entry file="file://$PROJECT_DIR$/ch08/reactvieformPr/src/app/app.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch08/reactvieformPr/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch08/reactvieformPr/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch08/ngFormTest/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch08/product-manager/src/app/custom-validators.directive.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/browserslist">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/InjectionPractice/src/app/app.component.css">
+    <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/InjectionPractice/src/app/get-nowtime/get-nowtime.component.ts">
+    <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/angular.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        <state relative-caret-position="363">
+          <caret line="101" column="17" lean-forward="true" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/InjectionPractice/src/app/get-nowtime/get-nowtime.component.spec.ts">
+    <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/navbar/navbar.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch05/InjectionPractice/src/app/get-nowtime/get-nowtime.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ViewPractice/src/app/test-parent/test-parent.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ElementRefPractice/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ElementRefPractice/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ElementRefPractice/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ngContentPr/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/navbar/navbar.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <caret line="6" column="74" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ngContentPr/src/app/test-parent/child/child.component.html">
+    <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/navbar/navbar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="165">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ngContentPr/src/app/test-parent/child/child.component.ts">
+    <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ngContentPr/src/app/test-parent/test-parent.component.html">
+    <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/sidebar/sidebar.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" column="73" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ngContentPr/src/app/test-parent/test-parent.component.spec.ts">
+    <entry file="file://$PROJECT_DIR$/chellange/Simple-commerce-manager/src/app/sidebar/sidebar.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ngContentPr/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch06/ngContentPr/src/app/test-parent/test-parent.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#108#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>
