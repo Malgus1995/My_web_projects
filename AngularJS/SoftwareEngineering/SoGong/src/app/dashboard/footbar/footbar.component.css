@@ -1,0 +1,14 @@
+.app-footer {
+  padding: 1rem;
+  text-align: center;
+  z-index: 1000;
+  border-top: 1px solid darkgray;
+}
+.madeby{
+  text-align: center;
+  text-decoration: greenyellow;
+  color: darkblue;
+}
+.teams{
+  color: yellowgreen;
+}

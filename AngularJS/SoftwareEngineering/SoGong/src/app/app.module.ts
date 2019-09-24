@@ -1,0 +1,31 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+import {MessageModule} from './message/message.module';
+import {NoticeModule} from './notice/notice.module';
+import { AddurlComponent } from './addurl/addurl.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    AddurlComponent,
+
+  ],
+  imports: [
+    BrowserModule,
+    DashboardModule,
+    AppRoutingModule,
+    RouterModule,
+    NoticeModule,
+    MessageModule,
+    AngularFontAwesomeModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

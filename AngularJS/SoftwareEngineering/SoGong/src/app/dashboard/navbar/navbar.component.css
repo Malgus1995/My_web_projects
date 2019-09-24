@@ -1,0 +1,9 @@
+.app-navbar {
+  border-bottom:1px solid darkgray;
+  background-color: #3d4752;
+}
+.app_title{
+  color: #eeeeee;
+  font-family: "Andale Mono";
+  font-style: inherit;
+}
