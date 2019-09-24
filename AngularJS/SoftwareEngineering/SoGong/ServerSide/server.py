@@ -11,10 +11,10 @@ api = Api(app)
 
 CORS(app)
 
-class test(Resource):
+class test_(Resource):
     def get(self):
         return testModule1.hello()
-api.add_resource(test, '/app-notice') # Route_1
+api.add_resource(test_, '/app-notice') # Route_1
 
 
 if __name__ == '__main__':

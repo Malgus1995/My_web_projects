@@ -1,12 +1,13 @@
 <nav class="navbar navbar-toggleable fixed-top scm-navbar">
-  <a  class="navbar-brand text-write" href="/">{{appTitle}}</a>
+  <a class="navbar-brand text-white" routerLink="">{{appTitle}}</a>
   <div class="collapse navbar-collapse d-flex justify-content-end" id="nav-bar">
-    <button class="btn btn-warning mr-2" routerLink="/product-list/product/0"
-            [queryParams]="{action: 'create'}"><i class="fa fa-plus"></i>상품 등록</button>
+    <button class="btn btn-warning mr-2"
+            routerLink="/product-list/product/0" [queryParams]="{action: 'create'}">
+      <i class="fa fa-plus"></i> 상품 등록</button>
     <form class="form-inline">
-      <input class="form-control mr-2" type="text" placeholder="Serial number" #searchInput>
-      <button class="btn btn-warning" type="button" (click)="serachProduct(searchInput.value)">상품 조회</button>
+      <input class="form-control mr-2" type="text" placeholder="상품 번호" #searchInput>
+      <button class="btn btn-warning" type="button" (click)="searchProduct(searchInput.value)">상품 조회</button>
     </form>
-
+    <button class="btn btn-warning ml-2" (click)="checkSession()">{{sessionBtnName}}</button>
   </div>
 </nav>

@@ -8,7 +8,6 @@ import {ProductRoutingModule } from './product-routing/product-routing.module';
   imports: [
     CommonModule,
     ProductRoutingModule
-
   ],
   exports: [ProductManagementComponent]
 })
