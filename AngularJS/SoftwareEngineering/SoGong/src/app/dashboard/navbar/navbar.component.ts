@@ -8,8 +8,8 @@ import {AddurlComponent} from '../../addurl/addurl.component';
 })
 export class NavbarComponent implements OnInit {
   addstatus = true;
-  head_appTitle = 'Notice'
-  tail_appTitle = 'Observer'
+  public head_appTitle = 'Notice'
+  public tail_appTitle = 'Observer'
   constructor() { }
   addURL() {
 
