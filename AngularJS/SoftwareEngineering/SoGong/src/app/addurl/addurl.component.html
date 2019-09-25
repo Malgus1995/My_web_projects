@@ -1,9 +1,20 @@
 
-<p>addurl works!</p>
 <div class="container-fluid">
-  <div class="col-md-5 offset-5">
-    <button type="button" id="url_btn_add " class="btn btn-warning">추가하기</button>
-    <button type="button" id="url_btn_cancel" class="btn btn-warning" (click)="cancel_adding()">취소하기</button>
+  <div class="page-header">
+    <h1 id="addTitle"><i class="fire fa fa-fire" aria-hidden="true"></i>URL추가하기</h1>
+    <span class="comm">파싱하고자 하는 URl을 추가해 주세요</span>
+  </div>
+  <div class="col-md-12 row">
+  <div class="input-group">
+    <span class="input-group-addon" id="put_url_label">파싱할 URL 입력</span>
+    <input type="text" class="form-control" placeholder="http//:12345.com" aria-describedby="basic-addon1">
+  </div>
+  </div>
+
+
+  <div class="footer_btns col-md-12 offset-5">
+    <button type="button" id="url_btn_add " class="btn btn-warning"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>추가하기</button>
+    <button type="button" id="url_btn_cancel" class="btn btn-warning" (click)="cancel_adding()"><i class="fa fa-ban" aria-hidden="true"></i> 취소하기</button>
   </div>
 </div>
 

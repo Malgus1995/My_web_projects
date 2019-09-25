@@ -9,11 +9,13 @@ import {MessageModule} from './message/message.module';
 import {NoticeModule} from './notice/notice.module';
 import { AddurlComponent } from './addurl/addurl.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { UrlMangementComponent } from './url-mangement/url-mangement.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddurlComponent,
+    UrlMangementComponent,
 
   ],
   imports: [

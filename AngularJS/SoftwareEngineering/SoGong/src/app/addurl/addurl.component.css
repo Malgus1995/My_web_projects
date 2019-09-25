@@ -1,3 +1,19 @@
 .btn{
   margin-left: 20px;
 }
+.footer_btns{
+  margin-top: 20px;
+}
+.comm{
+  color: yellowgreen;
+}
+#put_url_label{
+  color: darkblue;
+}
+#addTitle {
+  text-shadow: deepskyblue;
+  color: darkblue;
+}
+.fire{
+  color:red;
+}
