@@ -9,8 +9,10 @@ import {IndexDashboardComponent} from './index-dashboard/index-dashboard.compone
 const routes: Routes = [
   {path: 'message/app-message', component: MessageComponent},
   {path: 'notice/app-notice', component: NoticeComponent},
-  {path: 'addurl/app-addurl', component: UrlMangementComponent },
-  {path: 'main/app-index', component: IndexDashboardComponent}
+  {path: 'addurl/app-addurl', component: AddurlComponent },
+  {path: 'main/app-index', component: IndexDashboardComponent},
+  {path: 'addurl/app-url-mangement', component: UrlMangementComponent },
+
 
 ];
 
