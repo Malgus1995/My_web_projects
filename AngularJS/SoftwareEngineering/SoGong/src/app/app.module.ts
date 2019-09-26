@@ -10,6 +10,8 @@ import {NoticeModule} from './notice/notice.module';
 import { AddurlComponent } from './addurl/addurl.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { UrlMangementComponent } from './url-mangement/url-mangement.component';
+import { FormsModule} from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { UrlMangementComponent } from './url-mangement/url-mangement.component';
     RouterModule,
     NoticeModule,
     MessageModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
