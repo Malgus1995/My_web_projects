@@ -18,10 +18,10 @@ export class IndexDashboardComponent implements OnInit {
     this.LineChart = new Chart('lineChart', {
       type: 'line',
       data: {
-        labels: ["Jan", "Feb", "March", "April", "May", "June","July","Aug","Sep","Oct","Nov","Dec"],
+        labels: [(new Date().getDay()).toString()],
         datasets: [{
-          label: 'Number of Items Sold in Months',
-          data: [9,7 , 3, 5, 2, 10,15,16,19,3,1,9],
+          label: '게시글 갯수',
+          data: [9],
           fill:false,
           lineTension:0.2,
           borderColor:"red",
