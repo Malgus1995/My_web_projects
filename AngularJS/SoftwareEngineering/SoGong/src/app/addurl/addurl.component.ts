@@ -16,9 +16,9 @@ export class AddurlComponent implements OnInit {
     window.close();
   }
   onClickSubmit(data) {
-    this.url__value= data;
+    this.url__value = data;
     console.log(this.url__value.requestedurl);
-    this.addrmurl.addURL_POST(this.url__value);
+    this.addrmurl.addURL_GET(this.url__value);
 
   }
 

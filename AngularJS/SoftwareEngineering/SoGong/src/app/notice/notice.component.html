@@ -4,6 +4,27 @@
     <li class="breadcrumb-item">Notice<i class="fa fa-eye" aria-hidden="true"></i>Observer
     </li>
   </ol>
+  <div class="">
+    <table class="board_table table table-bordered">
+      <thead class ="board_head bg bg-inverse">
+      <tr>
+        <td class="tbdata tdhead">#</td>
+        <td class="tbdata tdbody">Title</td>
+        <td class="tbdata tdauthor">Author</td>
+        <td class="tbdata tdtail">Date</td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="tbdata">1</td>
+        <td class="tbdata">2</td>
+        <td class="tbdata">3</td>
+        <td class="tbdata">4</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
+
 <button type="button" class="btn btn-danger"(click)="getFlaskServerData()">flask server response test</button>
 <span>{{testServerData | json}}</span>
