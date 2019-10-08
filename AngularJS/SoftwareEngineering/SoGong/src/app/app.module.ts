@@ -12,7 +12,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { UrlMangementComponent } from './url-mangement/url-mangement.component';
 import { FormsModule} from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +29,8 @@ import { HttpClientModule} from '@angular/common/http';
     MessageModule,
     AngularFontAwesomeModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

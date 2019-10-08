@@ -18,6 +18,10 @@ db = SQLAlchemy(app)
 class URL_Management(db.Model):
     titlename = db.Column(db.String(120),primary_key=True)
     authorname = db.Column(db.String(120))
+    
+class POST(db.Model):
+    post_name = db.Column(db.String(120),primary_key=True)
+
 
 @app.route('/<titlename>/<authorname>')
 def index(titlename, authorname):
@@ -25,3 +29,10 @@ def index(titlename, authorname):
     db.session.add(url)
     db.session.commit()
     return'<h1>ADdd new url!</h1>'
+
+@app.route('/<post_name>')
+def add_post(post_name):
+    post = POST(post_name=post_name)
+    db.session.add(post)
+    db.session.commit()
+    return'<h1>ADd new post!</h1>'

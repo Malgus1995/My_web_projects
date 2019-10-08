@@ -1,6 +1,9 @@
 .board_head{
   color:#ffffff;
 }
+table {
+  width: 100%;
+}
 
 .board_table{
   border-collapse:separate;
@@ -8,7 +11,7 @@
   border-radius:6px;
   -moz-border-radius:6px;
 }
-.board_table tbody tr:hover{
+board_table.tbody ng-container:hover{
   background-color: lightblue;
 
 }

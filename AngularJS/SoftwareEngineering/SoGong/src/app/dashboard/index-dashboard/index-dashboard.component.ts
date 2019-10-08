@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Chart} from 'chart.js';
+
 @Component({
   selector: 'app-index-dashboard',
   templateUrl: './index-dashboard.component.html',
@@ -8,8 +9,12 @@ import {Chart} from 'chart.js';
 export class IndexDashboardComponent implements OnInit {
   todayCount=0;
   LineChart = [];
+  private Dash_routes: any;
   constructor() {
+
   }
+
+
 
 
   ngOnInit() {
