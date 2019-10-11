@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AddRemoveService } from '../Services/add-remove.service';
 import { HttpClient} from '@angular/common/http';
+
+import { FormControl, FormBuilder, FormGroup, Validators  } from '@angular/forms';
 
 @Component({
   selector: 'app-addurl',
@@ -9,20 +10,28 @@ import { HttpClient} from '@angular/common/http';
 })
 
 export class AddurlComponent implements OnInit {
-  url__value ;
+  private add_url_form: FormGroup;
+  url__value ="http://127.0.0.1:5002/add_url";
+  private url_add_controller: FormControl;
 
-  constructor(private addrmurl: AddRemoveService) {}
+
+  constructor(private httpClient: HttpClient) {
+    this.url_add_controller = new FormControl('');
+  }
   cancel_adding() {
     window.close();
   }
-  onClickSubmit(data) {
-    this.url__value = data;
-    console.log(this.url__value.requestedurl);
-    this.addrmurl.addURL_GET(this.url__value);
+  add_URL(ngform) {
+   var s = this.httpClient.post(this.url__value,ngform.value).subscribe();
+   console.log(ngform.value);
+   console.log()
+   ngform.ngAfterViewInit();
+
 
   }
 
   ngOnInit() {
+
   }
 
 }
