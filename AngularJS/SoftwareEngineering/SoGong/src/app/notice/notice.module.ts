@@ -5,9 +5,10 @@ import {NoticeComponent} from './notice.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MatTableModule} from "@angular/material";
 import { MatPaginatorModule } from '@angular/material';
+import { ConfirmNoticeComponent } from './confirm-notice/confirm-notice.component';
 
 @NgModule({
-  declarations: [NoticeComponent],
+  declarations: [NoticeComponent, ConfirmNoticeComponent],
   imports: [
     CommonModule,
     NoticeRoutingModule,
