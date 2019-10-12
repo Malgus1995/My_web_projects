@@ -5,12 +5,26 @@
     <h1 id="addTitle"><i class="fire fa fa-fire" aria-hidden="true"></i>URL추가하기</h1>
     <span class="comm">파싱하고자 하는 URl을 추가해 주세요</span>
   </div>
-  <form #urlform = "ngForm" (ngSubmit) = "add_URL(urlform)">
+  <form #urlform ="ngForm" (ngSubmit) = "add_URL(urlform)">
   <div class="col-md-12 mat-form-field row">
   <div class="input-group">
     <span class="input-group-addon" id="put_url_label">파싱할 URL 입력</span>
     <input type="text" name ="requestedurl" class="form-control" placeholder="http//:12345.com" aria-describedby="basic-addon1" ngModel>
   </div>
+    <div class="auth-info">
+      <p (click) = add_id_pw(auth_check) ><span><mat-checkbox #auth_check (click)=add_id_pw_chkbox($event) [checked]="agree_auth_info"></mat-checkbox></span><strong>인증 정보 입력(선택사항)</strong><br>
+        <span class="comm">*해당 사이트의 파싱에 있어서 로그인 정보가 필요한데 누락 된 경우, 읽어오는데 실패 할 수도 있습니다.</span></p>
+      <div #login_info class="input-group" *ngIf="agree_auth_info">
+        <div class="input-group-addon">
+          <span class="input-group-text" id="id_titl">ID :  </span>
+        </div>
+        <input type="text" name="idForAuth" class="form-control" placeholder="아이디" [disabled]="!agree_auth_info" ngModel>
+        <div class="input-group-addon">
+          <span class="input-group-text" id="pw_titl">PW :  </span>
+        </div>
+        <input type="password" name="pwForAuth" class="form-control" placeholder="비밀번호" [disabled]="!agree_auth_info" ngModel>
+      </div>
+    </div>
   </div>
 
 
@@ -21,4 +35,3 @@
   </form>
 
 </div>
-
