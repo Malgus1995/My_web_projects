@@ -33,6 +33,10 @@ export class AddurlComponent implements OnInit {
   add_URL(ngform) {
    var s = this.httpClient.post(this.url__value,ngform.value).subscribe();
    console.log(ngform.value);
+   if(ngform.submitted) {
+     alert("업로드 되었습니다.");
+     window.close();
+   }
    ngform.ngAfterViewInit();
 
 
