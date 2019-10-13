@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Chart} from 'chart.js';
-
+import { NotieceDataService} from  '../../notiece-data.service';
 @Component({
   selector: 'app-index-dashboard',
   templateUrl: './index-dashboard.component.html',
@@ -10,8 +10,10 @@ export class IndexDashboardComponent implements OnInit {
   todayCount=0;
   LineChart = [];
   private Dash_routes: any;
-  constructor() {
 
+  constructor(ND_service:NotieceDataService) {
+    console.log(ND_service.getLengthNotice());
+    console.log(ND_service.getNoticeList());
   }
 
 
