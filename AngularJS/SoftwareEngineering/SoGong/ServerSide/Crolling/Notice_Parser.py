@@ -28,5 +28,5 @@ def login_function(form):
     res_str = (title[0].text.strip())
 
 
-temp = make_login_info('201404376', 'wjdtjddnr615!')
+temp = make_login_info('!!!@@@###$$$', '***********')
 login_function(temp)
