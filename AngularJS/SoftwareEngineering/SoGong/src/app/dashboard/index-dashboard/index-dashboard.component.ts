@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Chart} from 'chart.js';
 import { NotieceDataService} from  '../../notiece-data.service';
+import { LoginmanagementService } from '../../loginmanagement.service';
 @Component({
   selector: 'app-index-dashboard',
   templateUrl: './index-dashboard.component.html',
@@ -10,10 +11,13 @@ export class IndexDashboardComponent implements OnInit {
   todayCount=0;
   LineChart = [];
   private Dash_routes: any;
+  private Login_status: boolean;
 
-  constructor(ND_service:NotieceDataService) {
+  constructor( ND_service: NotieceDataService, LoginManager : LoginmanagementService) {
+    this.Login_status = LoginManager.get_login_status();
     console.log(ND_service.getLengthNotice());
     console.log(ND_service.getNoticeList());
+    console.log("login_status: " + this.Login_status);
   }
 
 

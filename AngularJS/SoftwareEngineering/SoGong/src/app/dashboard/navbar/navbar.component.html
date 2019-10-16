@@ -2,6 +2,13 @@
 <nav class="navbar navbar-toggleable fixed-top app-navbar">
   <a  class="navbar-brand text-write app_title" href="/">{{head_appTitle}}<i class="fa fa-eye" aria-hidden="true"></i>{{tail_appTitle}}</a>
   <div class="collapse navbar-collapse d-flex justify-content-end" id="nav-bar">
+    <div class="join_mem-btn">
+      <button class="btn btn-success" type="button" routerLink="login/joinmembership" routerLinkActive="True"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>회원가입</button>
+    </div>
+    <div class="login-btn">
+      <button class="btn btn-warning" type="button" routerLink="login/app-login" routerLinkActive="True"><i class="fa fa-unlock" aria-hidden="true"></i>로그인</button>
+    </div>
+
     <button class="btn btn-primary" (click)="addURL()" type="button" *ngIf="addstatus"><i class="fa fa-plus-square-o" aria-hidden="true"></i> URL 추가하기</button>
   </div>
 </nav>

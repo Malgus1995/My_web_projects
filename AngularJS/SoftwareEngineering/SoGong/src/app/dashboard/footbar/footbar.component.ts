@@ -7,7 +7,7 @@ import {concat} from 'rxjs';
   styleUrls: ['./footbar.component.css']
 })
 export class FootbarComponent implements OnInit {
-  teams:string[] = ['LukeSungukJung', 'GibyoomKim', 'YeawonKim'];
+  teams:string[] = ['LukeSungukJung', 'GibeomKim', 'YewonKim'];
   lastName = this.teams[2];
   counter = 0;
   constructor() { }

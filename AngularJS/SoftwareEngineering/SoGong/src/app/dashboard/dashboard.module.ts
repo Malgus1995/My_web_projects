@@ -7,16 +7,20 @@ import {FootbarComponent} from './footbar/footbar.component';
 import {PagenotfoundComponent} from './pagenotfound/pagenotfound.component';
 import {SidebarComponent} from './sidebar/sidebar.component';
 import {DashboardRoutingModule} from './dashboard-routing.module';
+import {LoginComponent} from './login_out_page/login/login.component';
+import {JoinmemberComponent} from './login_out_page/joinmember/joinmember.component';
+import {FormsModule} from '@angular/forms';
 
 const CORE_COMPONENTS = [NavbarComponent, SidebarComponent, FootbarComponent,
-  IndexDashboardComponent, PagenotfoundComponent];
+  IndexDashboardComponent, PagenotfoundComponent, LoginComponent, JoinmemberComponent];
 
 @NgModule({
   declarations: CORE_COMPONENTS,
   imports: [
     CommonModule,
     RouterModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    FormsModule
   ],
   exports: CORE_COMPONENTS
 })

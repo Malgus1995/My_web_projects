@@ -7,3 +7,9 @@
   font-family: "Andale Mono";
   font-style: inherit;
 }
+.login-btn {
+  padding-right: 10px;
+}
+.join_mem-btn {
+  padding-right: 10px;
+}

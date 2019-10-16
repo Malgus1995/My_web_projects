@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
-
+import { LoginmanagementService} from '../loginmanagement.service';
 import { FormControl, FormBuilder, FormGroup, Validators  } from '@angular/forms';
 
 @Component({
@@ -10,14 +10,15 @@ import { FormControl, FormBuilder, FormGroup, Validators  } from '@angular/forms
 })
 
 export class AddurlComponent implements OnInit {
-  private add_url_form: FormGroup;
   url__value ="http://127.0.0.1:5002/add_url";
+
   private url_add_controller: FormControl;
   private agree_auth_info:boolean = false;
 
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private httpClient: HttpClient, private loginmanager: LoginmanagementService) {
     this.url_add_controller = new FormControl('');
+    console.log(loginmanager.get_login_status());
   }
   cancel_adding() {
     window.close();
@@ -31,14 +32,11 @@ export class AddurlComponent implements OnInit {
     event.preventDefault();
   }
   add_URL(ngform) {
-   var s = this.httpClient.post(this.url__value,ngform.value).subscribe();
-   console.log(ngform.value);
+   var s = this.httpClient.post(this.url__value, ngform.value).subscribe(res => { console.log(res); return res;});
    if(ngform.submitted) {
      alert("업로드 되었습니다.");
      window.close();
    }
-   ngform.ngAfterViewInit();
-
 
   }
 

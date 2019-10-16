@@ -1,4 +1,4 @@
-from flask import Flask, request, Response
+from flask import Flask, request, Response, json
 from flask_cors import CORS, cross_origin
 from flask_restful import Resource, Api
 from json import dumps
@@ -28,19 +28,21 @@ def index(titlename, authorname):
     db.session.commit()
     return'<h1>ADdd new url!</h1>'
  """  
+@app.route("/login_ask",methods=['POST'])
+def login_ask():
+    if request.method == 'POST':
+        data = {"login_status":"true"} # Your data in JSON-serializable type
+        response = app.response_class(response=json.dumps(data),status=200,mimetype='application/json')
+    return response
  
 @app.route("/add_url", methods=['POST'])
 def add_url():
     if request.method == 'POST':
-        result = request.form
-        response = Response(status=200)
-        print(result)
-        return response
+        data = {"some_key":"some_value"} # Your data in JSON-serializable type
+        response = app.response_class(response=json.dumps(data),status=200,mimetype='application/json')
+    return response
 
 
-
-    print(request.json)
-    return "Hello World!"
     """
     post = URL_Management(post_name=post_name)
     db.session.add(post)
