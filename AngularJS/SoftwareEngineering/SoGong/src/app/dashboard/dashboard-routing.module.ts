@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'main/app-index', component: IndexDashboardComponent},
   {path: 'addurl/app-url-mangement', component: UrlMangementComponent },
   {path: 'login/app-login', component: LoginComponent},
-  {path: 'login/joinmembership', component: JoinmemberComponent}
+  {path: 'login/joinmembership', component: JoinmemberComponent},
 
 ];
 
