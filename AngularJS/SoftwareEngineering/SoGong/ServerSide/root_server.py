@@ -5,6 +5,7 @@ from json import dumps
 from flask_jsonpify import jsonify
 from Message import testModule1
 from flask_sqlalchemy import SQLAlchemy
+from Crolling import Notice_Parser
 import os;
 
 
@@ -49,12 +50,14 @@ def add_url():
     db.session.commit()
     return'<h1>ADd new post!</h1>'
     """
- 
+    
 class test(Resource):
     def get(self):
         return testModule1.hello()
 api.add_resource(test, '/app-notice') # Route_1
+aa = Notice_Parser.make_entire_refined_data()
 
 
-if __name__ == '__main__':
-     app.run(debug=True,port=5002)
+#if __name__ == '__main__':
+#     app.run(debug=True,port=5002)
+
