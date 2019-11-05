@@ -6,11 +6,14 @@ import {HttpClient} from '@angular/common/http';
 })
 export class AddRemoveService {
   _url= 'http://127.0.0.1:5002/';
-  addURL_GET(data) {
+  addURL(data) {
     this.http.get(this._url, data).subscribe(
       success => console.log('success!', data),
       error => console.error('error', data)
     );
+
+  }
+  removeURL(data){
 
   }
   constructor(private http: HttpClient) { }

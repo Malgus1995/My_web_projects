@@ -43,7 +43,11 @@ def add_url():
         response = app.response_class(response=json.dumps(data),status=200,mimetype='application/json')
     return response
 
-
+@app.route("/app-notice", methods=['POST'])
+def send_req():
+    if request.method == 'POST':
+        data = Notice_Parser.make_entire_refined_data()
+    return jsonify(data)
     """
     post = URL_Management(post_name=post_name)
     db.session.add(post)
@@ -54,10 +58,10 @@ def add_url():
 class test(Resource):
     def get(self):
         return testModule1.hello()
-api.add_resource(test, '/app-notice') # Route_1
-aa = Notice_Parser.make_entire_refined_data()
+#api.add_resource(test, '/app-notice') # Route_1
+#aa = Notice_Parser.make_entire_refined_data()
 
 
-#if __name__ == '__main__':
-#     app.run(debug=True,port=5002)
+if __name__ == '__main__':
+     app.run(debug=True,port=5002)
 

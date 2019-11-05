@@ -20,10 +20,12 @@ export class NoticeComponent implements OnInit {
 
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
 
-  constructor(private httpclient: HttpClient) { }
+  constructor(private httpclient: HttpClient) {
+    this.getFlaskServerData();
+  }
 
   getFlaskServerData() {
-    this.httpclient.get('http://127.0.0.1:5002/app-notice').subscribe(data => {
+    this.httpclient.post('http://127.0.0.1:5002/app-notice', 'ask_req').subscribe(data => {
       this.testServerData = data as JSON;
       console.log(this.testServerData);
     });
