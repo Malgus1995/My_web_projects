@@ -1,32 +1,64 @@
 import requests
-import selenium
 from bs4 import BeautifulSoup as bs
 
 
-#Login user info
-def make_login_info(member_id, memeber_pw):
-    LOGIN_INFO = {
-        'member_id': member_id,
-        'member_pw': memeber_pw
-    }
-    return LOGIN_INFO
+def get_title_from_junk(dirty_title):
+
+    slice_index =  min(dirty_title.index('\n'), dirty_title.index('\t'))
+    refiend_title = dirty_title[:slice_index]
+    return refiend_title
 
 #Computer Site Session
-def login_function(form):
+def parse_data_function():
     with requests.Session() as S:
-        login_req = S.post('https://computer.cnu.ac.kr/computer/etc/login.do', data=form)
-        print(login_req.status_code)
-
-        if login_req.status_code != 200:
-            raise Exception('로그인 실패. ID 또는 PW를 확인해주세요.')
-
         post_one = S.get('https://computer.cnu.ac.kr/computer/notice/bachelor.do')
         soup = bs(post_one.text, 'html.parser')
+        data = []
+        table = soup.find('table', attrs={'class':'board-table'})
+        table_body = table.find('tbody')
 
-        title = soup.select('#jwxe_main_content > div > div > div.bn-list-common01.type01.bn-common > table > tbody > tr:nth-child(8) > td.b-td-left > div > a')
+        rows = table_body.find_all('tr')
+        for row in rows:
+            cols = row.find_all('td')
+            cols = [ele.text.strip() for ele in cols]
+            data.append([ele for ele in cols if ele])
+    return data
 
-    res_str = (title[0].text.strip())
+def get_a_tag():
+    with requests.Session() as S:
+        post_one = S.get('https://computer.cnu.ac.kr/computer/notice/bachelor.do')
+        base_url = 'https://computer.cnu.ac.kr/computer/notice/bachelor.do'
+        soup = bs(post_one.text, 'html.parser')
+        data = []
+        table = soup.find('table', attrs={'class':'board-table'})
+        table_body = table.find('tbody')
 
+        rows = table_body.find_all('a')
+        for uf_a_tag in rows:
+            start_index = str(uf_a_tag).index("\"")+1
+            end_index = str(uf_a_tag).index("title")-2
+            #print(uf_a_tag[start_index:end_index])
+            rf_atag = str(uf_a_tag)[start_index:end_index].replace('amp;','')
+            #print(rf_atag)
+            data.append(base_url+rf_atag)
+    return data
 
-temp = make_login_info('!!!@@@###$$$', '***********')
-login_function(temp)
+def make_entire_refined_data():
+    res = []
+    temp_dic = {}
+    unrefined_notice_data = parse_data_function()
+    rf_all_atags = get_a_tag()
+    for idx,one in enumerate(unrefined_notice_data):
+        if one[0] == '공지':
+            continue
+        temp_dic['title'] = get_title_from_junk(one[1])
+        temp_dic['author'] = one[2]
+        temp_dic['post_date'] = one[3]
+        temp_dic['post_url'] = rf_all_atags[idx]
+        res.append(temp_dic)
+        temp_dic = {}
+    return res
+
+#temp = make_login_info('$$$$$$$$$', '############')
+#unrefined_notice_data = login_function(temp)
+#res_crwaling_data = make_entire_refined_data(unrefined_notice_data)
