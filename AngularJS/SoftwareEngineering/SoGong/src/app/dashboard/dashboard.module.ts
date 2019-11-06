@@ -10,6 +10,8 @@ import {DashboardRoutingModule} from './dashboard-routing.module';
 import {LoginComponent} from './login_out_page/login/login.component';
 import {JoinmemberComponent} from './login_out_page/joinmember/joinmember.component';
 import {FormsModule} from '@angular/forms';
+import {NotieceDataService } from '../notiece-data.service';
+import {HttpClientModule} from '@angular/common/http';
 
 const CORE_COMPONENTS = [NavbarComponent, SidebarComponent, FootbarComponent,
   IndexDashboardComponent, PagenotfoundComponent, LoginComponent, JoinmemberComponent];
@@ -17,11 +19,14 @@ const CORE_COMPONENTS = [NavbarComponent, SidebarComponent, FootbarComponent,
 @NgModule({
   declarations: CORE_COMPONENTS,
   imports: [
+    HttpClientModule,
     CommonModule,
     RouterModule,
     DashboardRoutingModule,
     FormsModule
   ],
+  providers: [NotieceDataService]
+  ,
   exports: CORE_COMPONENTS
 })
 export class DashboardModule { }

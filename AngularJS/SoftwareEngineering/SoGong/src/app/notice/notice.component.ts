@@ -3,7 +3,6 @@ import { HttpClient} from '@angular/common/http';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
 
-
 @Component({
   selector: 'app-notice',
   templateUrl: './notice.component.html',
@@ -15,7 +14,6 @@ import {MatTableDataSource} from '@angular/material/table';
 export class NoticeComponent implements OnInit {
   displayedColumns: string[] = ['post_num', 'title', 'author', 'post_date'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
-
   testServerData: JSON;
 
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
@@ -27,14 +25,18 @@ export class NoticeComponent implements OnInit {
   getFlaskServerData() {
     this.httpclient.post('http://127.0.0.1:5002/app-notice', 'ask_req').subscribe(data => {
       this.testServerData = data as JSON;
-      for(var i=0; i< Object.keys(this.testServerData).length ; i++ ) {
+
+      while (ELEMENT_DATA.length) { ELEMENT_DATA.pop(); }
+
+
+      for( var i = 0; i < Object.keys(this.testServerData).length ; i++ ) {
         ELEMENT_DATA.push(this.testServerData[i]);
       }
       this.dataSource.paginator = this.paginator;
     });
+
   }
   ngOnInit() {
-
 
   }
 }
@@ -47,6 +49,4 @@ export interface PeriodicElement {
   post_url: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-
-];
+const ELEMENT_DATA: PeriodicElement[] = [];

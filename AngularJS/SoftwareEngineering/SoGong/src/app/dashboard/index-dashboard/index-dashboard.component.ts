@@ -1,58 +1,71 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Host, Inject, OnInit} from '@angular/core';
 import {Chart} from 'chart.js';
-import { NotieceDataService} from  '../../notiece-data.service';
+import { HttpClient} from '@angular/common/http';
+import { NotieceDataService } from  '../../notiece-data.service';
 import { LoginmanagementService } from '../../loginmanagement.service';
+import { NoticeComponent } from '../../notice/notice.component';
 @Component({
   selector: 'app-index-dashboard',
   templateUrl: './index-dashboard.component.html',
   styleUrls: ['./index-dashboard.component.css']
 })
 export class IndexDashboardComponent implements OnInit {
-  todayCount=0;
+  todayCount = 0;
+  noticegetter: NotieceDataService;
   LineChart = [];
   private Dash_routes: any;
   private Login_status: boolean;
+  private label_s = [];
+  private data_s = [];
 
-  constructor( ND_service: NotieceDataService, LoginManager : LoginmanagementService) {
-    this.Login_status = LoginManager.get_login_status();
-    console.log(ND_service.getLengthNotice());
-    console.log(ND_service.getNoticeList());
-    console.log("login_status: " + this.Login_status);
+  constructor(@Host()  noticeservice: NotieceDataService) {
+    this.noticegetter = noticeservice;
+    this.noticegetter.getFlaskPostData();
+    this.data_s = this.noticegetter.get_NoticeUploadVal().reverse();
+    this.label_s = this.noticegetter.get_NoticeDateVal().reverse();
+
+  }
+  addData(chart, label, data) {
+    chart.data.labels.push(label);
+    chart.data.datasets.forEach((dataset) => {
+      dataset.data.push(data);
+    });
+    chart.update();
   }
 
-
-
-
   ngOnInit() {
-
-    // Line chart:
     this.LineChart = new Chart('lineChart', {
       type: 'line',
       data: {
-        labels: [(new Date().getDay()).toString()],
+        labels: [],
         datasets: [{
           label: '게시글 갯수',
-          data: [9],
-          fill:false,
-          lineTension:0.2,
-          borderColor:"red",
+          data: [] ,
+          fill: false,
+          lineTension: 0.2,
+          borderColor: "red",
           borderWidth: 1
         }]
       },
       options: {
-        title:{
-          text:"Line Chart",
-          display:true
+        title: {
+          text: "Line Chart",
+          display: true
         },
         scales: {
           yAxes: [{
             ticks: {
-              beginAtZero:true
+              beginAtZero: true
             }
           }]
         }
       }
     });
+    for(var i=0;i<this.data_s.length;i++){
+      this.addData(this.LineChart, this.label_s[i], this.data_s[i]);
+    }
+    console.log(this.data_s);
   }
-
 }
+
+
