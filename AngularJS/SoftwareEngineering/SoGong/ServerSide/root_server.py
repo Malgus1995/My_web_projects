@@ -48,6 +48,7 @@ def send_req():
     if request.method == 'POST':
         data = Notice_Parser.make_entire_refined_data()
     return jsonify(data)
+
     """
     post = URL_Management(post_name=post_name)
     db.session.add(post)

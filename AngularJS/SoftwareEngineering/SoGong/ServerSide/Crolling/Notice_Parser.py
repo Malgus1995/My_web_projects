@@ -50,15 +50,18 @@ def make_entire_refined_data():
     temp_dic = {}
     unrefined_notice_data = parse_data_function()
     rf_all_atags = get_a_tag()
+    counter_index = 1;
     for idx,one in enumerate(unrefined_notice_data):
         if one[0] == '공지':
             continue
+        temp_dic['post_num'] =  counter_index
         temp_dic['title'] = get_title_from_junk(one[1])
         temp_dic['author'] = one[2]
         temp_dic['post_date'] = one[3]
         temp_dic['post_url'] = rf_all_atags[idx]
         res.append(temp_dic)
         temp_dic = {}
+        counter_index+=1
     return res
 
 #temp = make_login_info('$$$$$$$$$', '############')
