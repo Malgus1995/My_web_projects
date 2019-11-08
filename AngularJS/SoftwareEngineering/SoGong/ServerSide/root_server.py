@@ -55,10 +55,17 @@ def send_req():
     db.session.commit()
     return'<h1>ADd new post!</h1>'
     """
+@app.route("/add_email_list", methods=['POST'])
+def register_email_list():
+    if request.method == 'POST':
+        data = {"some_key":"some_value"} 
+        print(request.data)
+        print(data)
+    return jsonify(data)
     
-class test(Resource):
-    def get(self):
-        return testModule1.hello()
+#class test(Resource):
+#    def get(self):
+#        return testModule1.hello()
 #api.add_resource(test, '/app-notice') # Route_1
 #aa = Notice_Parser.make_entire_refined_data()
 

@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {MatPaginator, MatTableDataSource} from "@angular/material";
+
 import {HttpClient} from "@angular/common/http";
 
 @Component({
@@ -8,16 +8,40 @@ import {HttpClient} from "@angular/common/http";
   styleUrls: ['./message.component.css']
 })
 export class MessageComponent implements OnInit {
-  displayedColumns: string[] = ['post_num', 'title', 'author', 'post_date'];
-  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
-  testServerData: JSON;
+  email_list= [];
 
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
+  addNewEmail(){
+    let temp_form = {
+      edit_mode: false};
+    this.email_list.push(temp_form);
+  }
+  deleteItem(item){
+    console.log(item.pop());
+  }
+  change_edit_mode2_register_mode(item) {
+    item['edit_mode']=true;
+  }
+  complete_email_write(item,input_area) {
+    item['type'] = 'email';
+    item['email'] = input_area.value;
+    item['edit_mode']=false;
+    var email_json_str = JSON.stringify(item);
 
-  constructor(private httpclient: HttpClient) {
-    this.getFlaskServerData();
+    this.httpclient.post('http://127.0.0.1:5002/add_email_list', email_json_str).subscribe(data =>{
+      console.log(data);
+    });
   }
 
+  constructor(private httpclient: HttpClient) {
+  }
+
+  ngOnInit() {
+
+  }
+}
+
+
+/*
   getFlaskServerData() {
     this.httpclient.post('http://127.0.0.1:5002/app-notice', 'ask_req').subscribe(data => {
       this.testServerData = data as JSON;
@@ -32,17 +56,4 @@ export class MessageComponent implements OnInit {
     });
 
   }
-  ngOnInit() {
-
-  }
-}
-
-export interface PeriodicElement {
-  title: string;
-  post_num: number;
-  author: string;
-  post_date: string;
-  post_url: string;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [];
+  */

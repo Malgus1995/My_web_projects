@@ -1,4 +1,19 @@
 .pmclas {
-
+  margin-left: 2px;
   margin-right: 2px;
+}
+.email_table{
+  border-radius: 5px;
+  border-bottom-color: white;
+}
+#ask_add_email{
+  color: white;
+
+}
+#ask_add_email:hover {
+  color:yellow;
+}
+
+.deletebtn{
+  background-color: #eeeeee;
 }
