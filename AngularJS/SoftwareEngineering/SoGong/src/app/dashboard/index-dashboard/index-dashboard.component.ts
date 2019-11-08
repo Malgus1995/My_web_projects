@@ -21,8 +21,8 @@ export class IndexDashboardComponent implements OnInit {
   constructor(@Host()  noticeservice: NotieceDataService) {
     this.noticegetter = noticeservice;
     this.noticegetter.getFlaskPostData();
-    this.data_s = this.noticegetter.get_NoticeUploadVal().reverse();
-    this.label_s = this.noticegetter.get_NoticeDateVal().reverse();
+    this.data_s = this.noticegetter.get_NoticeUploadVal();
+    this.label_s = this.noticegetter.get_NoticeDateVal();
 
   }
   addData(chart, label, data) {

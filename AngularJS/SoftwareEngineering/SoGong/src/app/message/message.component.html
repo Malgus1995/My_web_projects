@@ -4,5 +4,40 @@
     <li class="breadcrumb-item">Notice<i class="fa fa-eye" aria-hidden="true"></i>Observer
     </li>
   </ol>
+  <div class="mat-elevation-z8">
+    <table class="board_table" mat-table [dataSource]="dataSource">
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="post_num">
+        <th mat-header-cell *matHeaderCellDef>*수정/-제거 </th>
+        <td mat-cell *matCellDef="let element">
+          <button type="button" class="pmclas btn btn-primary">*</button>
+          <button type="button" class="pmclas btn btn-warning">-</button></td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef>email</th>
+        <td mat-cell *matCellDef="let element"><input type="email" class="form-control" placeholder="이메일 입력하기"></td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="author">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element">{{element.author}}</td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="post_date">
+        <th mat-header-cell *matHeaderCellDef> <button type="button" class="btn btn-primary">새 이메일 추가하기</button></th>
+        <td mat-cell *matCellDef="let element"> {{element.post_date}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]= "[10]" showFirstLastButtons></mat-paginator>
+  </div>
 </div>
 
