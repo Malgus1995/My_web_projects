@@ -14,6 +14,7 @@ import { FormsModule} from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatButtonModule} from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

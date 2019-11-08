@@ -1,8 +1,42 @@
-<div class="container-fluid">
-  <ol class="breadcrumb">
+<div class="container-fluid ">
+  <ol class="breadcrumb ">
     <li class="breadcrumb-item">URL Management</li>
     <li class="breadcrumb-item">Notice<i class="fa fa-eye" aria-hidden="true"></i>Observer
     </li>
   </ol>
 </div>
-<p>url-mangement works!</p>
+<div class="table-bordered">
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th scope="col">수정하기</th>
+      <th scope="col">URL 정보</th>
+      <th scope="col">삭제하기</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let url_info of url_list">
+      <td><button *ngIf="!url_edit_mode" (click)="change2editMode()" mat-raised-button color="primary"><i class="fa fa-wrench" aria-hidden="true"></i></button>
+        <button *ngIf="url_edit_mode" (click) ="complete_edit()" mat-raised-button color="success">입력완료</button></td>
+      <td><input type="url" class="form-control" [disabled]="!url_edit_mode" [value]="url_info.requestedurl" #url_input_element>
+        <div *ngIf="exist_loginfo">
+        <p (click) = modify_id_pw(auth_check) ><span><mat-checkbox #auth_check [checked]="agree_auth_info"></mat-checkbox></span><strong>인증 정보 확인(클릭)</strong><br>
+          <span class="comm">*해당 사이트의 로그인 정보가 있습니다!</span></p></div>
+        <div class="input-group" *ngIf="agree_auth_info">
+          <div class="input-group-addon">
+            <span class="input-group-text" id="id_title">ID :  </span>
+          </div>
+          <input type="text" name="idForAuth" class="form-control" [value]="url_info['idForAuth']" [disabled]="!agree_auth_info">
+          <div class="input-group-addon">
+            <span class="input-group-text" id="pw_title">PW :  </span>
+          </div>
+          <input type="password" name="pwForAuth" class="form-control" [value]="url_info['pwForAuth']" [disabled]="!agree_auth_info">
+          <button type="button" (click)="complete_modify_auth_login_form()" class="btn btn-success"><-</button>
+        </div>
+      </td>
+      <td><button mat-icon-button color="warn" class="deletebtn">x</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<p class="warning">**등록된 URL의 갯수는 최대 1개를 초과할수 없습니다!**</p>

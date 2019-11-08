@@ -1,7 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 
 import {HttpClient} from "@angular/common/http";
-import {del} from "selenium-webdriver/http";
 
 @Component({
   selector: 'app-message',

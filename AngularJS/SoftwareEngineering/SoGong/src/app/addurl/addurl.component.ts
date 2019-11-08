@@ -32,10 +32,11 @@ export class AddurlComponent implements OnInit {
     event.preventDefault();
   }
   add_URL(ngform) {
-   var s = this.httpClient.post(this.url__value, ngform.value).subscribe(res => { console.log(res); return res;});
-   if(ngform.submitted) {
-     alert("업로드 되었습니다.");
-     window.close();
+    let url_info = JSON.stringify(ngform.value);
+    var s = this.httpClient.post(this.url__value, url_info).subscribe(res => { console.log(res); return res;});
+    if(ngform.submitted) {
+      alert("업로드 되었습니다.");
+      window.close();
    }
 
   }
