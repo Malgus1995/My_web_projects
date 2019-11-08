@@ -33,7 +33,7 @@ export class MessageComponent implements OnInit {
     item['email'] = input_area.value;
     item['edit_mode']=false;
     var email_json_str = JSON.stringify(item);
-    this.httpclient.post('http://127.0.0.1:5002/del_email_list', prevalue).subscribe(data =>{
+    this.httpclient.post('http://127.0.0.1:5002/del_email_list', JSON.stringify(prevalue)).subscribe(data =>{
       console.log(data);
     });
     this.httpclient.post('http://127.0.0.1:5002/add_email_list', email_json_str).subscribe(data =>{
@@ -44,7 +44,7 @@ export class MessageComponent implements OnInit {
 
     this.httpclient.post('http://127.0.0.1:5002/get_email_list', 'load_email_list').subscribe(data => {
       console.log(data['email_list']);
-     this.email_list = data['email_list'];
+      this.email_list = data['email_list'];
     });
   }
 
