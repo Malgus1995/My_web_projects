@@ -7,6 +7,7 @@ from Message import testModule1
 from flask_sqlalchemy import SQLAlchemy
 from Crolling import Notice_Parser
 import os;
+import json
 
 
 app = Flask(__name__)
@@ -14,6 +15,16 @@ api = Api(app)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///Notice&URL_DB.db'
 CORS(app)
+
+
+"""
+여기를 디비에 저장하게 해야댐
+"""
+temp_email_list = []
+"""
+여기를 디비에 저장하게 해야댐
+"""
+temp_url_list = []
 
 
 db = SQLAlchemy(app)
@@ -59,9 +70,29 @@ def send_req():
 def register_email_list():
     if request.method == 'POST':
         data = {"some_key":"some_value"} 
-        print(request.data)
-        print(data)
+        data_email_info = json.loads(request.data)
+        print(data_email_info)
+        if(data_email_info not in temp_email_list):
+            temp_email_list.append(data_email_info)
     return jsonify(data)
+
+@app.route("/del_email_list", methods=['POST'])
+def delete_email_list():
+    if request.method == 'POST':
+        data = {"some_key":"some_value"} 
+        data_email_info = json.loads(request.data)
+        print(data_email_info)
+        if(data_email_info in temp_email_list):
+            temp_email_list.remove(data_email_info)
+        print(len(temp_email_list))
+    return jsonify(data)
+@app.route("/get_email_list", methods=['POST'])
+def get_registerd_email_list():
+    response = {'email_list':temp_email_list}
+    return jsonify(response)
+    
+    
+
     
 #class test(Resource):
 #    def get(self):

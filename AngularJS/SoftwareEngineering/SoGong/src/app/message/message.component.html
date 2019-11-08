@@ -17,7 +17,7 @@
       <tr *ngFor="let email_info of email_list">
         <td><button *ngIf="!email_info['edit_mode']" (click)="change_edit_mode2_register_mode(email_info)" mat-raised-button color="primary"><i class="fa fa-wrench" aria-hidden="true"></i></button>
           <button *ngIf="email_info['edit_mode']" (click)="complete_email_write(email_info, email_input_element)" mat-raised-button color="success">입력완료</button></td>
-        <td><input type="email" class="form-control" placeholder="input your email" [disabled]="!email_info['edit_mode']" #email_input_element></td>
+        <td><input type="email" class="form-control" placeholder="input your email" [disabled]="!email_info['edit_mode']" [value]="email_info.email" #email_input_element></td>
         <td><button mat-icon-button color="warn" (click)="deleteItem(email_list)" class="deletebtn">x</button></td>
       </tr>
       </tbody>
