@@ -10,6 +10,7 @@ export class UrlMangementComponent implements OnInit {
   url_list = []
   agree_auth_info=false;
   exist_loginfo=false;
+  conform_loginfo=true;
   url_edit_mode = false;
   change2editMode() {
     this.url_edit_mode = !this.url_edit_mode;
@@ -23,7 +24,7 @@ export class UrlMangementComponent implements OnInit {
     this.httpclient.post('http://127.0.0.1:5002/get_registered_url', 'load_url_list').subscribe(data => {
       console.log(data['url_list']);
       this.url_list = data['url_list'];
-      if ((this.url_list['idForAuth'] && this.url_list['pwForAuth'] ) !==null) {
+      if ((this.url_list[0]['idForAuth'] !==undefined&& this.url_list[0]['pwForAuth']!==undefined ) ) {
         this.exist_loginfo=true;
 
 
@@ -41,6 +42,14 @@ export class UrlMangementComponent implements OnInit {
     this.agree_auth_info = !this.agree_auth_info
     console.log(this.agree_auth_info);
 
+  }
+
+  deleteItem(item){
+    console.log(item);
+    let deleted_item = (item.pop());
+    this.httpclient.post('http://127.0.0.1:5002/del_url_list', deleted_item).subscribe(data =>{
+      console.log(data);
+    });
   }
   constructor(private httpclient: HttpClient) {
     this.load_url_list();

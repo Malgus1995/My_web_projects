@@ -19,7 +19,7 @@
       <td><button *ngIf="!url_edit_mode" (click)="change2editMode()" mat-raised-button color="primary"><i class="fa fa-wrench" aria-hidden="true"></i></button>
         <button *ngIf="url_edit_mode" (click) ="complete_edit()" mat-raised-button color="success">입력완료</button></td>
       <td><input type="url" class="form-control" [disabled]="!url_edit_mode" [value]="url_info.requestedurl" #url_input_element>
-        <div *ngIf="exist_loginfo">
+        <div *ngIf="exist_loginfo &&conform_loginfo">
         <p (click) = modify_id_pw(auth_check) ><span><mat-checkbox #auth_check [checked]="agree_auth_info"></mat-checkbox></span><strong>인증 정보 확인(클릭)</strong><br>
           <span class="comm">*해당 사이트의 로그인 정보가 있습니다!</span></p></div>
         <div class="input-group" *ngIf="agree_auth_info">
@@ -34,7 +34,7 @@
           <button type="button" (click)="complete_modify_auth_login_form()" class="btn btn-success"><-</button>
         </div>
       </td>
-      <td><button mat-icon-button color="warn" class="deletebtn">x</button></td>
+      <td><button mat-icon-button color="warn" (click)="deleteItem(url_list)" class="deletebtn">x</button></td>
     </tr>
     </tbody>
   </table>

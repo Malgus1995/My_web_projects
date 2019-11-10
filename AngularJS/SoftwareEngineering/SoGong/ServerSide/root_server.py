@@ -59,6 +59,17 @@ def add_url():
     return response
 
 
+@app.route("/del_url_list", methods=['POST'])
+def del_url():
+    if request.method == 'POST':
+        data = {"some_key":"some_value"} 
+        data_url_info = json.loads(request.data)
+        print(data_url_info)
+        if(data_url_info in temp_url_list):
+            temp_url_list.remove(data_url_info)
+        print(len(data_url_info))
+    return jsonify(data)
+
 @app.route("/get_registered_url", methods=['POST'])
 def get_registered_url():
     if request.method == 'POST':
@@ -92,6 +103,7 @@ def delete_email_list():
             temp_email_list.remove(data_email_info)
         print(len(temp_email_list))
     return jsonify(data)
+
 @app.route("/get_email_list", methods=['POST'])
 def get_registerd_email_list():
     response = {'email_list':temp_email_list}
