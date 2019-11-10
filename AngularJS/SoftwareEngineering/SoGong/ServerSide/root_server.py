@@ -25,6 +25,10 @@ temp_email_list = []
 이 배열을 디비에 저장하게 해야댐
 """
 temp_url_list = []
+"""
+이 배열을 디비에 저장하게 해야댐
+"""
+temp_member_list=[]
 
 
 db = SQLAlchemy(app)
@@ -40,10 +44,28 @@ def index(titlename, authorname):
     db.session.commit()
     return'<h1>ADdd new url!</h1>'
  """  
-@app.route("/login_ask",methods=['POST'])
-def login_ask():
+
+@app.route("/check_duplicate_id",methods=['POST'])
+def check_duplicated_member():
+    res = True
     if request.method == 'POST':
-        data = {"login_status":"true"} # Your data in JSON-serializable type
+        checks_id = request.data.decode("utf-8")
+        data = {"duplicate_statue":"false"}
+        for one in temp_member_list:
+            res= not (one['userid']==checks_id)
+        data["duplicate_statue"] = res;
+        response = app.response_class(response=json.dumps(data),status=200,mimetype='application/json')
+    return response
+        
+        
+
+@app.route("/join_member",methods=['POST'])
+def join_member():
+    if request.method == 'POST':
+        new_face_info = json.loads(request.data)
+        temp_member_list.append(new_face_info)
+        data = {"join_statue":"true"} # Your data in JSON-serializable type
+        print(temp_member_list)
         response = app.response_class(response=json.dumps(data),status=200,mimetype='application/json')
     return response
  
