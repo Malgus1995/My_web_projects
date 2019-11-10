@@ -91,7 +91,8 @@ def get_registered_url():
 @app.route("/app-notice", methods=['POST'])
 def send_req():
     if request.method == 'POST':
-        data = Notice_Parser.make_entire_refined_data()
+        data =Notice_Parser.make_entire_refined_data(temp_url_list[0]['requestedurl'])
+        print(data)
     return jsonify(data)
 
 

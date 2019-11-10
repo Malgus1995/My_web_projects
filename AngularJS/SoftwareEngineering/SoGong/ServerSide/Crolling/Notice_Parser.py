@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup as bs
 
 
+test_url='https://computer.cnu.ac.kr/computer/notice/bachelor.do'
+
 def get_title_from_junk(dirty_title):
 
     slice_index =  min(dirty_title.index('\n'), dirty_title.index('\t'))
@@ -9,9 +11,9 @@ def get_title_from_junk(dirty_title):
     return refiend_title
 
 #Computer Site Session
-def parse_data_function():
+def parse_data_function(parse_url):
     with requests.Session() as S:
-        post_one = S.get('https://computer.cnu.ac.kr/computer/notice/bachelor.do')
+        post_one = S.get(parse_url)
         soup = bs(post_one.text, 'html.parser')
         data = []
         table = soup.find('table', attrs={'class':'board-table'})
@@ -24,10 +26,10 @@ def parse_data_function():
             data.append([ele for ele in cols if ele])
     return data
 
-def get_a_tag():
+def get_a_tag(parse_url):
     with requests.Session() as S:
-        post_one = S.get('https://computer.cnu.ac.kr/computer/notice/bachelor.do')
-        base_url = 'https://computer.cnu.ac.kr/computer/notice/bachelor.do'
+        post_one = S.get(parse_url)
+        base_url = parse_url
         soup = bs(post_one.text, 'html.parser')
         data = []
         table = soup.find('table', attrs={'class':'board-table'})
@@ -45,11 +47,11 @@ def get_a_tag():
 
 
 
-def make_entire_refined_data():
+def make_entire_refined_data(parse_url):
     res = []
     temp_dic = {}
-    unrefined_notice_data = parse_data_function()
-    rf_all_atags = get_a_tag()
+    unrefined_notice_data = parse_data_function(parse_url)
+    rf_all_atags = get_a_tag(parse_url)
     counter_index = 1;
     for idx,one in enumerate(unrefined_notice_data):
         if one[0] == '공지':

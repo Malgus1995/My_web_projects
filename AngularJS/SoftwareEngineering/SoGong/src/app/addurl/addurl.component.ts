@@ -25,7 +25,7 @@ export class AddurlComponent implements OnInit {
   add_id_pw(chkbox){
     chkbox.checked = !chkbox.checked;
 
-    this.agree_auth_info = chkbox.checked
+    this.agree_auth_info = chkbox.checked;
   }
   add_id_pw_chkbox(event){
     event.preventDefault();
