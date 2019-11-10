@@ -58,16 +58,28 @@ def add_url():
         response = app.response_class(response=json.dumps(data),status=200,mimetype='application/json')
     return response
 
+@app.route("/modify_url", methods=['POST'])
+def modify_url():
+    if request.method == 'POST':
+        data = {"some_key":"some_value"} # Your data in JSON-serializable type
+        data_url_info = json.loads(request.data)
+        print(data_url_info)
+        temp_url_list.clear()
+        temp_url_list.append(data_url_info)
+        print(temp_url_list)
+        response = app.response_class(response=json.dumps(data),status=200,mimetype='application/json')
+    return response
+
 
 @app.route("/del_url_list", methods=['POST'])
 def del_url():
     if request.method == 'POST':
         data = {"some_key":"some_value"} 
         data_url_info = json.loads(request.data)
-        print(data_url_info)
+      #  print(data_url_info)
         if(data_url_info in temp_url_list):
             temp_url_list.remove(data_url_info)
-        print(len(data_url_info))
+       # print(len(data_url_info))
     return jsonify(data)
 
 @app.route("/get_registered_url", methods=['POST'])
@@ -88,7 +100,7 @@ def register_email_list():
     if request.method == 'POST':
         data = {"some_key":"some_value"} 
         data_email_info = json.loads(request.data)
-        print(data_email_info)
+        #print(data_email_info)
         if(data_email_info not in temp_email_list):
             temp_email_list.append(data_email_info)
     return jsonify(data)
@@ -98,7 +110,7 @@ def delete_email_list():
     if request.method == 'POST':
         data = {"some_key":"some_value"} 
         data_email_info = json.loads(request.data)
-        print(data_email_info)
+        #print(data_email_info)
         if(data_email_info in temp_email_list):
             temp_email_list.remove(data_email_info)
         print(len(temp_email_list))

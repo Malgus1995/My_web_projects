@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { LoginmanagementService} from '../loginmanagement.service';
 import { FormControl, FormBuilder, FormGroup, Validators  } from '@angular/forms';
-
 @Component({
   selector: 'app-addurl',
   templateUrl: './addurl.component.html',
@@ -15,8 +14,8 @@ export class AddurlComponent implements OnInit {
   private url_add_controller: FormControl;
   private agree_auth_info:boolean = false;
 
-
   constructor(private httpClient: HttpClient, private loginmanager: LoginmanagementService) {
+
     this.url_add_controller = new FormControl('');
     console.log(loginmanager.get_login_status());
   }

@@ -17,7 +17,7 @@
     <tbody>
     <tr *ngFor="let url_info of url_list">
       <td><button *ngIf="!url_edit_mode" (click)="change2editMode()" mat-raised-button color="primary"><i class="fa fa-wrench" aria-hidden="true"></i></button>
-        <button *ngIf="url_edit_mode" (click) ="complete_edit()" mat-raised-button color="success">입력완료</button></td>
+        <button *ngIf="url_edit_mode" (click) ="complete_edit(url_input_element)" mat-raised-button color="success">입력완료</button></td>
       <td><input type="url" class="form-control" [disabled]="!url_edit_mode" [value]="url_info.requestedurl" #url_input_element>
         <div *ngIf="exist_loginfo &&conform_loginfo">
         <p (click) = modify_id_pw(auth_check) ><span><mat-checkbox #auth_check [checked]="agree_auth_info"></mat-checkbox></span><strong>인증 정보 확인(클릭)</strong><br>

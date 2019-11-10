@@ -24,8 +24,8 @@ export class MessageComponent implements OnInit {
   }
   change_edit_mode2_register_mode(item) {
     item['edit_mode']=true;
-
   }
+
   complete_email_write(item,input_area) {
     let prevalue = item;
     item['type'] = 'email';
