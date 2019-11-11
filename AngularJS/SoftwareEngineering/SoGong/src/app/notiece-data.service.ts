@@ -25,6 +25,15 @@ export class NotieceDataService {
       this.set_Notice_piece(this.testServerData);
     });
   }
+  clear(){
+    for(var i=0;i<ELEMENT_DATA.length;i++)
+      ELEMENT_DATA.pop();
+    for(var i=0;i<NoticeDateVal.length;i++)
+      NoticeDateVal.pop();
+
+    for(var i=0;i<NoticeUploadVal.length;i++)
+      NoticeUploadVal.pop();
+  }
 
   set_Notice_piece(dictionary_collection) {
 

@@ -29,7 +29,7 @@ temp_url_list = []
 이 배열을 디비에 저장하게 해야댐
 """
 temp_member_list=[]
-
+login_status= True
 
 
 db = SQLAlchemy(app)
@@ -160,16 +160,17 @@ def login_ask():
 @app.route("/get_login_status", methods=['POST'])
 def get_login_status():
     if request.method == 'POST':
-        login_status = (not (len(temp_member_list)>0))
+        login_status=False
         response = {'login_status':login_status}
     return jsonify(response)
-        
-    
-#class test(Resource):
-#    def get(self):
-#        return testModule1.hello()
-#api.add_resource(test, '/app-notice') # Route_1
-#aa = Notice_Parser.make_entire_refined_data()
+
+@app.route("/logout_request", methods=['POST'])
+def logout_request():
+    if request.method == 'POST':
+        login_status = False
+        response = {'login_status':login_status}
+    return jsonify(response)
+                
 if __name__ == '__main__':
     app.run(debug=True,port=5002)
          
