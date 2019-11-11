@@ -4,32 +4,34 @@
     <h1 id="addTitle"><i class="fire fa fa-child" aria-hidden="true"></i>회원가입</h1>
     <span class="comm">회원 정보를 입력해주세요</span>
   </div>
+  <div class="col-lg-3 offset-4">
   <form #personalinfo ="ngForm">
-    <div class="col-md-6 mat-form-field">
+    <div class="mat-form-field newbie_filed">
       <div class="input-group">
         <span class="input-group-addon" id="put_newface_name">이름</span>
-        <input type="text" name ="newfacename" class="form-control" placeholder="궁동에서 구애의 춤을 추다가 머리가 깨져 모태솔로가 된 성욱이" aria-describedby="basic-addon1" ngModel>
+        <input #username type="text" name ="newfacename" class="form-control" placeholder="성욱이" aria-describedby="basic-addon1" ngModel>
       </div>
-      <div class="input-group">
+      <div class="input-group newbie_filed">
         <span class="input-group-addon" id="put_newface_id">아이디</span>
-        <input type="text" name ="newfaceid" class="form-control" placeholder="다크 매지션 위자드성욱 " aria-describedby="basic-addon1" ngModel>
-        <button type="button" class="btn btn-primary">중복확인</button>
+        <input #userid type="text" name ="newfaceid" class="form-control" placeholder="Sith Lord SU" aria-describedby="basic-addon1" ngModel>
+        <button type="button" (click)="check_duplcated_id(userid.value)" class="btn btn-primary">중복확인</button>
       </div>
-      <div class="input-group">
+      <div class="input-group newbie_filed">
         <span class="input-group-addon" id="put_newface_password">비밀번호</span>
-        <input type="password" name ="newfacepassword" class="form-control" ngModel>
+        <input #passwd type="password" name ="newfacepassword" class="form-control" ngModel>
       </div>
-      <div class="input-group">
+      <div class="input-group newbie_filed">
         <span class="input-group-addon" id="put_newface_password_config">비밀번호확인</span>
-        <input type="password" name ="newfacepassword" class="form-control" aria-describedby="basic-addon1" ngModel>
+        <input #passwdconfig type="password" name ="newfacepassword" class="form-control" aria-describedby="basic-addon1" ngModel>
       </div>
     </div>
 
 
     <div class="footer_btns mat-form-field col-md-12 offset-5">
-      <button type="submit" value="submit" id="url_btn_add" class="btn btn-success"><i class="fa fa-child" aria-hidden="true"></i>회원 가입하기</button>
+      <button type="submit" value="submit" (click)="add_join_request(username,userid,passwd,passwdconfig)" id="url_btn_add" class="btn btn-success join"><i class="fa fa-child" aria-hidden="true"></i>회원 가입하기</button>
       <button type="button" routerLink="/" routerLinkActive="True" class="btn btn-warning cancel_join" ><i class="fa fa-ban" aria-hidden="true"></i> 취소하기</button>
     </div>
   </form>
+  </div>
 
 </div>

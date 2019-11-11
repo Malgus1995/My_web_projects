@@ -31,6 +31,7 @@ temp_url_list = []
 temp_member_list=[]
 
 
+
 db = SQLAlchemy(app)
 
 class URL_Management(db.Model):
@@ -144,20 +145,32 @@ def get_registerd_email_list():
     response = {'email_list':temp_email_list}
     return jsonify(response)
 
-#@app.route("/get_email_list", methods=['POST'])
-#def get_registerd_email_list():
-#    response = {'email_list':temp_email_list}
-#    return jsonify(response)
+@app.route("/login_ask", methods=['POST'])
+def login_ask():
+    if request.method == 'POST':
+        login_info = json.loads(request.data)
+        for one in temp_member_list:
+            if(login_info['requested_userid']==one['userid']):
+                if(login_info['requested_userpw']==one['passwd']):
+                    login_status=False
+        print(login_info)
+        response = {'login_status':login_status}
+    return jsonify(response)
 
-
+@app.route("/get_login_status", methods=['POST'])
+def get_login_status():
+    if request.method == 'POST':
+        login_status = (not (len(temp_member_list)>0))
+        response = {'login_status':login_status}
+    return jsonify(response)
+        
     
 #class test(Resource):
 #    def get(self):
 #        return testModule1.hello()
 #api.add_resource(test, '/app-notice') # Route_1
 #aa = Notice_Parser.make_entire_refined_data()
-
-
 if __name__ == '__main__':
-     app.run(debug=True,port=5002)
+    app.run(debug=True,port=5002)
+         
 

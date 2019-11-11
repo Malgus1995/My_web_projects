@@ -1,34 +1,27 @@
 import { Injectable } from '@angular/core';
 
+
+
+const login_id_pw = [];
+
 @Injectable({
   providedIn: 'root'
 })
 export class LoginmanagementService {
   private login: boolean = false;
 
-
-  ask_valid_req_login() {
-    return true;
-  }
-  ask_valid_req_logout(){
-    return false;
+  login_verified(logininfo) {
+    login_id_pw.push(logininfo);
   }
 
-  login_req(asking) {
-    console.log("asking: "+ asking);
-    if ( asking) {
-      this.login = this.ask_valid_req_login();
-    } else {
-      this.login = this.ask_valid_req_logout();
-    }
+  check_login(asking) {
+    this.login= asking;
   }
-
-  logout_req() {
-    this.login = this.ask_valid_req_logout();
+  get_length(){
+    return login_id_pw.length;
   }
-
   get_login_status() {
-    return this.login;
+    return !(login_id_pw.length > 0);
   }
 
 
