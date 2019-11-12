@@ -128,6 +128,9 @@ def register_email_list():
         #print(data_email_info)
         if(data_email_info not in temp_email_list):
             temp_email_list.append(data_email_info)
+            """
+            이메일 전송 함수 구현
+            """
     return jsonify(data)
 
 @app.route("/del_email_list", methods=['POST'])
