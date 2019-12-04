@@ -3,7 +3,7 @@ from flask_cors import CORS, cross_origin
 from flask_restful import Resource, Api
 from json import dumps
 from flask_jsonpify import jsonify
-from Message import testModule1
+from Message import message
 from flask_sqlalchemy import SQLAlchemy
 from Crolling import Notice_Parser
 import os;
@@ -15,6 +15,7 @@ api = Api(app)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///Notice&URL_DB.db'
 CORS(app)
+
 
 
 """
@@ -116,7 +117,6 @@ def get_registered_url():
 def send_req():
     if request.method == 'POST':
         data =Notice_Parser.make_entire_refined_data(temp_url_list[0]['requestedurl'])
-        print(data)
     return jsonify(data)
 
 
@@ -128,9 +128,12 @@ def register_email_list():
         #print(data_email_info)
         if(data_email_info not in temp_email_list):
             temp_email_list.append(data_email_info)
-            """
-            이메일 전송 함수 구현
-            """
+            parsed_notice_list =Notice_Parser.make_entire_refined_data(temp_url_list[0]['requestedurl'])
+
+            if(len(parsed_notice_list)>0):
+                for one in (parsed_notice_list):   
+                    message.send_notice_message(data_email_info['email'],one['title'])
+                
     return jsonify(data)
 
 @app.route("/del_email_list", methods=['POST'])
@@ -178,4 +181,3 @@ def logout_request():
 if __name__ == '__main__':
     app.run(debug=True,port=5002)
          
-

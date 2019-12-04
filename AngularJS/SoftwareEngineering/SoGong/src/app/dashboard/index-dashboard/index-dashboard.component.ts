@@ -34,6 +34,7 @@ export class IndexDashboardComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.noticegetter.getFlaskPostData();
     this.LineChart = new Chart('lineChart', {
       type: 'line',
       data: {
