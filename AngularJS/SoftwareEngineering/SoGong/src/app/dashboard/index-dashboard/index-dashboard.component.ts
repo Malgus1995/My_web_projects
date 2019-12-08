@@ -20,7 +20,7 @@ export class IndexDashboardComponent implements OnInit {
 
   constructor(@Host()  noticeservice: NotieceDataService) {
     this.noticegetter = noticeservice;
-    this.noticegetter.getFlaskPostData();
+    //this.noticegetter.getFlaskPostData();
     this.data_s = this.noticegetter.get_NoticeUploadVal();
     this.label_s = this.noticegetter.get_NoticeDateVal();
 
@@ -33,15 +33,15 @@ export class IndexDashboardComponent implements OnInit {
     chart.update();
   }
 
-  ngOnInit() {
-    this.noticegetter.getFlaskPostData();
+   async ngOnInit(@Host()  noticeservice: NotieceDataService) {
+    await this.noticegetter.getFlaskPostData();
     this.LineChart = new Chart('lineChart', {
       type: 'line',
       data: {
         labels: [],
         datasets: [{
           label: '게시글 갯수',
-          data: [] ,
+          data: [],
           fill: false,
           lineTension: 0.2,
           borderColor: "red",
@@ -62,9 +62,9 @@ export class IndexDashboardComponent implements OnInit {
         }
       }
     });
-    for(var i=0;i<this.data_s.length;i++){
-      this.addData(this.LineChart, this.label_s[i], this.data_s[i]);
-    }
+       for (var i = 0; i < this.data_s.length; i++) {
+         this.addData(this.LineChart, this.label_s[i], this.data_s[i]);
+       }
     console.log(this.data_s);
   }
 }

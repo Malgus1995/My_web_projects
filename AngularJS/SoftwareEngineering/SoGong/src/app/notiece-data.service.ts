@@ -14,7 +14,7 @@ export class NotieceDataService {
   testServerData;
 
 
-  getFlaskPostData() {
+  async getFlaskPostData() {
     this.httpclient.post('http://127.0.0.1:5002/app-notice', 'ask_req').subscribe(data => {
       this.testServerData = data as JSON;
 
