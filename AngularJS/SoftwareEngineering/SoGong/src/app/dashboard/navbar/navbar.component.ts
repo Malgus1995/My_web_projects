@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
   login_exist = true;
 
 
-  constructor(private httpclient: HttpClient, private notices:NotieceDataService) {
+  constructor(private httpclient: HttpClient, private notices:NotieceDataService, private ls: LoginmanagementService) {
 
     httpclient.post('http://127.0.0.1:5002/get_registered_url', 'load_url_list').subscribe(data => {
         console.log(data);
@@ -25,10 +25,13 @@ export class NavbarComponent implements OnInit {
       console.log(data);
     });
 
+
     httpclient.post('http://127.0.0.1:5002/get_login_status', 'chk_login').subscribe(data => {
       this.login_exist = (data['login_status']);
+      console.log('loginstatus'+data['login_status']);
     });
   }
+
   req_logout() {
     this.httpclient.post('http://127.0.0.1:5002/logout_request', 'logout_request').subscribe(data => {
       this.login_exist = !(data['login_status']);

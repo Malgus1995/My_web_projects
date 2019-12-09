@@ -33,8 +33,8 @@ export class IndexDashboardComponent implements OnInit {
     chart.update();
   }
 
-   async ngOnInit(@Host()  noticeservice: NotieceDataService) {
-    await this.noticegetter.getFlaskPostData();
+    ngOnInit() {
+    this.noticegetter.getFlaskPostData();
     this.LineChart = new Chart('lineChart', {
       type: 'line',
       data: {

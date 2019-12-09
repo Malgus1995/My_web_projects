@@ -31,7 +31,7 @@ temp_url_list = []
 """
 temp_member_list=[]
 
-login_status= True
+login_status = True
 
 
 db = SQLAlchemy(app)
@@ -159,22 +159,23 @@ def login_ask():
         for one in temp_member_list:
             if(login_info['requested_userid']==one['userid']):
                 if(login_info['requested_userpw']==one['passwd']):
-                    login_status=False
+                    login_status=True
         print(login_info)
+        print(login_status)
         response = {'login_status':login_status}
     return jsonify(response)
 
 @app.route("/get_login_status", methods=['POST'])
 def get_login_status():
     if request.method == 'POST':
-        login_status=False
+        print(login_status)
         response = {'login_status':login_status}
     return jsonify(response)
 
 @app.route("/logout_request", methods=['POST'])
 def logout_request():
     if request.method == 'POST':
-        login_status = False
+        login_status != login_status
         response = {'login_status':login_status}
     return jsonify(response)
                 
