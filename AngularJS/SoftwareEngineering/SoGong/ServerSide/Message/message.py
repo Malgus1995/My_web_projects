@@ -14,7 +14,7 @@ def send_notice_message(client_email,notice):
     smtp = smtplib.SMTP('smtp.gmail.com', 587)
     smtp.ehlo()      # say Hello
     smtp.starttls()  # TLS 사용시 필요
-    smtp.login('xrjseka615@gmail.com', 'qhbxyixlcsznnkuq')
+    smtp.login('*****@gmail.com', '*****')
      
     msg = MIMEText(notice)
     msg['Subject'] = notice
