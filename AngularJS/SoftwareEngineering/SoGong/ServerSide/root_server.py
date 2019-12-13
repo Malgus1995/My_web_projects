@@ -18,17 +18,9 @@ CORS(app)
 
 
 
-"""
-이 배열을 디비에 저장하게 해야댐
-"""
+
 temp_email_list = []
-"""
-이 배열을 디비에 저장하게 해야댐
-"""
 temp_url_list = []
-"""
-이 배열을 디비에 저장하게 해야댐
-"""
 temp_member_list=[]
 
 login_status = True
